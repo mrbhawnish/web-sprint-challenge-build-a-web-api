@@ -61,11 +61,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
+    -Node.js provides us with a way to write our web API's much easier because we can write them with the same Javascript language and paradigm as front-end without having to switch any context. 
+   - Another feature is that it is single threaded thus, it removes the complexity of managing multiple threads.
+   -It's Asynchronous, so we can take full advantage of the processor its running on. The node process run on a single CPU.
+   -NPM registry, we can access to the largest ecosystem of useful libraries in the form of npm modules.
+   Express' main features are:
+   * Middleware functions, they can get the request and response object, operate on them, and when specified trigger some action.
+   * Routing, it's a way to select which request handler function is executed. It does so based on the URL visited and the HTTP method used. Routing provides a way to break an application into smaller parts.
+   * Router for Application Modularity, applications can be broken up into routers. There could be one to serve our SPA and another for our API. Each router can have its own middleware and routing. This combination provides an extended and improved functionality.
+   * Convenience Helpers, express has many helpers that easily provide functionality for our web applications and API servers. Most of these extension methods added to the request and response objects.
 1. Understand and explain the use of Middleware?
+    Middleware is a function that intercepts a process, runs some code and chooses continure or not with that original process. Hence, it's a great way to extend our API's functionality.
 1. The basic principles of the REST architectural style.
+    * Everything is a resource.
+    * Each resource is accessible via a unique URI.
+    * Resources can have multiple respresentations.
+    * Communication happens over a stateless protocol (HTTP).
+    * Resource management happens via HTTP methods.
 1. Understand and explain the use of Express Routers.
+    -Routers is one of the main features that Express provides to break the application into different request handlers for each URL route and HTTP method combination.
 1. Describe tooling used to manually test the correctness of an API.
-
+   
+   -For testing our web API we can use a tool called Postman that allows us full control when making requests. We can easily change the HTTP Method used, add JSON data to the body, add headers, examine the response etc...
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
